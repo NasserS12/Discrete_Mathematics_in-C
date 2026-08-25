@@ -20,15 +20,14 @@ This repository applies discrete mathematics concepts practically by solving the
 ## How to Run
 
 ```bash
-gcc truth_tables.c -o output
+gcc filename.c -o output
 ./output
-```
 
 Example:
 
 ```bash
-gcc truth_tables.c -o gcd
-./truth_tables.c
+gcc truth_tables.c -o truth_tables
+./truth_tables
 ```
 
 ## File Structure
