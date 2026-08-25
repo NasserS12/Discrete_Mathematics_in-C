@@ -27,8 +27,8 @@ gcc filename.c -o output
 Example:
 
 ```bash
-gcc gcd.c -o gcd
-./gcd
+gcc truth_tables.c -o truth_tables
+./truth_tables
 ```
 
 ## File Structure
