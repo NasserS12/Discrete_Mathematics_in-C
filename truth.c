@@ -8,7 +8,7 @@ void basic_truth_table() {
             for (int r = 1; r >= 0; r--) {                
                 int p_implies_q = (!p || q);      // p -> q
                 int q_implies_r = (!q || r);      // q -> r
-                int and_result = p_implies_q && q_implies_r; // (p -> q) ^ (q -> r)
+                int and_result = p_implies_q && q_implies_r; // (p -> q) && (q -> r)
                 
                 printf("p = %d, q = %d, r = %d | p -> q = %d | q -> r = %d | (p -> q) && (q -> r) = %d\n\n", 
                         p, q, r, p_implies_q, q_implies_r, and_result);
