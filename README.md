@@ -23,6 +23,7 @@ This repository applies discrete mathematics concepts practically by solving the
 gcc filename.c -o output
 ./output
 
+
 Example:
 
 ```bash
