@@ -1,20 +1,31 @@
 #include <stdio.h>
 
-// Generates a truth table for 3 variables (p, q, r) testing hypothetical syllogism
 void basic_truth_table() {
-    printf("\t=== Basic Logical Operators Truth Table ===\n\n");
+    printf("\t=== Logical Equivalence Truth Table ===\n");
+    printf("\tFormula: (p -> (q && r)) <-> ((p -> q) && (p -> r))\n\n");
+
     for (int p = 1; p >= 0; p--) {
         for (int q = 1; q >= 0; q--) {
-            for (int r = 1; r >= 0; r--) {                
-                int p_implies_q = (!p || q);      // p -> q
-                int q_implies_r = (!q || r);      // q -> r
-                int and_result = p_implies_q && q_implies_r; // (p -> q) && (q -> r)
-                
-                printf("p = %d, q = %d, r = %d | p -> q = %d | q -> r = %d | (p -> q) && (q -> r) = %d\n\n", 
-                        p, q, r, p_implies_q, q_implies_r, and_result);
+            for (int r = 1; r >= 0; r--) {
+                // 1. Evaluate LHS sub-expressions: q && r, then p -> (q && r)
+                int q_and_r = q && r;
+                int lhs_result = !p || q_and_r;
+
+                // 2. Evaluate RHS sub-expressions: (p -> q) and (p -> r)
+                int p_implies_q = !p || q;
+                int p_implies_r = !p || r;
+                int rhs_result = p_implies_q && p_implies_r;
+
+                // 3. Evaluate the Biconditional (<->): LHS == RHS
+                int is_equivalent = (lhs_result == rhs_result);
+
+                // Print row breakdown
+                printf("p = %d | q = %d | r = %d | q&&r = %d | p->(q&&r) = %d | p->q = %d | p->r = %d | RHS = %d | Equiv = %d\n",
+                       p, q, r, q_and_r, lhs_result, p_implies_q, p_implies_r, rhs_result, is_equivalent);
             }
         }
     }
+    printf("\n");
 }
 
 // Demonstrates a Tautology: statement is ALWAYS true (all outputs = 1)
