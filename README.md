@@ -31,18 +31,7 @@ gcc truth_tables.c -o truth_tables
 ./truth_tables
 ```
 
-## File Structure
 
-Each `.c` file solves a single problem, with the filename reflecting its topic.
-
-```
-discrete-mathematics-in-c
- |-- logic.c
- |-- gcd.c
- |-- permutations.c
- |-- ...
- |-- README.md
-```
 
 ## License
 
