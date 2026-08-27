@@ -32,7 +32,3 @@ gcc truth_tables.c -o truth_tables
 ```
 
 
-
-## License
-
-This project is free to use for educational purposes.
