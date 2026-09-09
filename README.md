@@ -33,18 +33,7 @@ gcc gcd.c -o gcd
 ./gcd
 ```
 
-## File Structure
 
-Each `.c` file solves a single problem, with the filename reflecting its topic.
-
-```
-discrete-mathematics-in-c
- |-- logic.c
- |-- gcd.c
- |-- permutations.c
- |-- ...
- |-- README.md
-```
 
 ## License
 
