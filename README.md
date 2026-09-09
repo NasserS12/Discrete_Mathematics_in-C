@@ -8,7 +8,9 @@ This repository applies discrete mathematics concepts practically by solving the
 
 ## Topics Covered
 
-- Propositional Logic
+- Propositional Logic & Truth Tables
+- Predicates & Quantifiers
+- Nested Quantifiers
 - Set Theory
 - Functions and Relations
 - Combinatorics (Permutations and Combinations)
