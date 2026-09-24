@@ -6,6 +6,10 @@ A repository containing solutions to problems and equations from the Discrete Ma
 
 This repository applies discrete mathematics concepts practically by solving them using C code.
 
+## Approach
+
+For each problem, I first work it out by hand on paper — solving and proving it mathematically — then translate that proof into a C program to verify it.
+
 ## Topics Covered
 
 - Propositional Logic & Truth Tables
