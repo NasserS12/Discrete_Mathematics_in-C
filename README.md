@@ -17,7 +17,7 @@ This repository applies discrete mathematics concepts practically by solving the
 - Number Theory (GCD, Prime Numbers, etc.)
 - Matrices
 - Graph Theory
-- Proof Techniques (Direct Proof, Contraposition, Contradiction, Induction)
+- Proof Techniques (Direct Proof, Contraposition, Contradiction, Cases, Induction)
 
 ## How to Run
 
