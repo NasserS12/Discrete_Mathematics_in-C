@@ -22,6 +22,7 @@ For each problem, I first work it out by hand on paper — solving and proving i
 - Matrices
 - Graph Theory
 - Proof Techniques (Direct Proof, Contraposition, Contradiction, Cases, Induction)
+- Disproof by Counterexample
 
 ## How to Run
 
